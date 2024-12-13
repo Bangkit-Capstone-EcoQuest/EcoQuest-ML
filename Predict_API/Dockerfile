@@ -12,6 +12,8 @@ COPY . .
 
 ENV PYTHONUNBUFFERED=1
 
+ENV GOOGLE_APPLICATION_CREDENTIALS=ecoquest-vertex-key.json
+
 EXPOSE 8080
 
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080"]
